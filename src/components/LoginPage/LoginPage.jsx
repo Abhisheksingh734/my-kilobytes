@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import Logo from "../assets/logo.png";
+import Logo from "../../assets/logo.png";
 
 const LoginPage = () => {
   const navigate = useNavigate();
@@ -9,7 +9,7 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="h-screen  ">
+    <div className="h-screen w-full  ">
 
     <div
       className="h-screen flex flex-col justify-center items-center"
