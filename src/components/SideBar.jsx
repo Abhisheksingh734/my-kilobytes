@@ -27,10 +27,12 @@ const SideBar = () => {
           <div className="text-2xl text-white"><FaUsers/></div>
           <NavLink to={"/agents"} className={({isActive})=>`text-white ${isActive? 'text-blue-gray-300 border-b-2 rounded-md px-6' : '' } font-normal`}>Agents</NavLink>
         </div>
-        <div className="mt-auto text-white text-xl p-4 flex flex-col justify-center items-center">
+        <NavLink to={"/login"} className="mt-auto" >
+        <div className="text-white text-xl p-4 flex flex-col justify-center items-center">
           < RxExit/>
-          <NavLink to={"/login"} className="text-white text-lg  font-sans">Logout</NavLink>
+           <p className="text-white text-lg  font-sans">Logout</p>
         </div>
+           </NavLink>
       </div>
   )
 }

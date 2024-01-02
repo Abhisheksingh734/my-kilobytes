@@ -1,12 +1,14 @@
 import { useNavigate } from "react-router-dom";
 import Logo from "../../assets/logo.png";
 
-const LoginPage = () => {
+const LoginPage = (props) => {
   const navigate = useNavigate();
 
-  const handleClick = () => {
+  const {onLogin} = props;
+  const handleLogin = ()=>{
+    onLogin();
     navigate("/");
-  };
+  }
 
   return (
     <div className="h-screen w-full  ">
@@ -41,7 +43,7 @@ const LoginPage = () => {
 
           <button
             className="w-full text-center py-3 rounded-lg bg-green text-white bg-blue-700"
-            onClick={handleClick}
+            onClick={handleLogin}
             >
             Login
           </button>
